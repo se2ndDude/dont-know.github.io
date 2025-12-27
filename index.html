@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User's Command Center</title>
+    <style>
+        body {
+            background-color: #050505;
+            color: #00ff41;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .profile-card {
+            border: 2px solid #00ff41;
+            padding: 30px;
+            background: rgba(0, 255, 65, 0.05);
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+            text-align: center;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        h1 { font-size: 1.5rem; text-transform: uppercase; letter-spacing: 3px; }
+
+        .links { margin-top: 20px; }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            color: #00ff41;
+            border: 1px solid #00ff41;
+            padding: 10px;
+            margin: 10px 0;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #00ff41;
+            color: #050505;
+            box-shadow: 0 0 15px #00ff41;
+        }
+
+        /* Scanline effect */
+        body::before {
+            content: " ";
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <h1>System Active</h1>
+        <p>Welcome to my 24/7 Node</p>
+        <hr style="border: 0.5px solid #00ff41;">
+        
+        <div class="links">
+            <a href="https://github.com/YOUR-USERNAME" class="btn">GitHub Profile</a>
+            <a href="mailto:your-email@example.com" class="btn">Contact Me</a>
+            <a href="#" class="btn">My Projects</a>
+        </div>
+    </div>
+
+    <p style="margin-top: 20px; font-size: 0.7rem;">Uptime: 100% | Status: Online</p>
+
+</body>
+</html>
